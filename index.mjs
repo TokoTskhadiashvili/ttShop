@@ -6,6 +6,7 @@ import authRouter from "./modules/auth/auth.routes.mjs";
 import cartRouter from "./modules/cart/cart.routes.mjs";
 import checkoutRouter from "./modules/checkout/checkout.routes.mjs";
 import productRouter from "./modules/product/product.routes.mjs";
+import sellerRouter from "./modules/seller/seller.routes.mjs";
 import { sequelize } from "./connector/database.mjs";
 import redisClient from "./connector/redis.mjs";
 
@@ -48,3 +49,4 @@ app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/product', productRouter);
 app.use('/api/v1/cart', cartRouter)
 app.use('/api/v1/checkout', checkoutRouter);
+app.use('/api/v1/seller', sellerRouter);

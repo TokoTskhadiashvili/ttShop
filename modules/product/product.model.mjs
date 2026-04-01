@@ -8,7 +8,8 @@ export const createProductModel = (sequelize) => {
         },
         name: {
             type: DataTypes.STRING(32),
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
         description: {
             type: DataTypes.STRING(64),
